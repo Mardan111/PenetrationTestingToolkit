@@ -1,9 +1,9 @@
 import sys
-from port_scanner.port_scanner import port_scan
-from brute_forcer.brute_forcer import brute_force_ssh
-from vulnerability_scanner.vuln_scanner import check_http_version
-from dir_brute_force.dir_brute import brute_force_dirs
-from http_header_scanner.header_scanner import scan_http_headers
+from port_scanner import port_scan
+from brute_forcer import brute_force_ssh
+from vuln_scanner import check_http_version
+from dir_brute import brute_force_dirs
+from header_scanner import scan_http_headers
 
 def display_menu():
     print("\nPenetration Testing Toolkit")
