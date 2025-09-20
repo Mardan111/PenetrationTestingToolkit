@@ -81,6 +81,7 @@ Example Commands
 Example:-
 
 Enter target IP or domain: 8.8.8.8
+
 Enter ports (comma-separated): 22,80,443
 
 
@@ -95,7 +96,9 @@ Enter ports (comma-separated): 22,80,443
 Example:-
 
 Enter target IP: 192.168.1.10
+
 Enter username: admin
+
 Enter path to password file: passwords.txt
 
 ## Vulnerability Scanner (HTTP Version Check)
@@ -122,6 +125,7 @@ Enter target URL: https://examples.com
 Example:-
 
 Enter target URL: http://example.com
+
 Enter path to wordlist: wordlist.txt
 
 ## HTTP Header Scanning
