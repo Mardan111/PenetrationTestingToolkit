@@ -69,26 +69,71 @@ Penetration Testing Toolkit
 
 Example Commands
 
- Port Scanning
+## Port Scanning
+ 
+
+-Function: Discovers open ports on a target IP address or domain.
+
+-Relevance: By identifying open ports, a tester can map out a system's network services and find potential entry points for an attack. For example, an open port 22 suggests that an SSH server is running, while port 80 or 443 suggests a web server.
+
+-Implementation: This module uses the socket library to attempt connections to a specified range of ports, reporting which ones are open. 
+
+Example:-
 
 Enter target IP or domain: 8.8.8.8
 Enter ports (comma-separated): 22,80,443
 
-SSH Brute Forcing
+
+## SSH Brute Forcing
+
+-Function: Attempts to gain unauthorized access to a Secure Shell (SSH) server by guessing the login credentials.
+
+-Relevance: This test identifies weak passwords by systematically trying combinations from a provided wordlist. A successful brute-force attack on SSH provides a way to gain shell access to the target system.
+
+-Implementation: The tool uses a library like paramiko to automate connection attempts with a list of usernames and passwords from a file until it finds a valid combination.
+
+Example:-
 
 Enter target IP: 192.168.1.10
 Enter username: admin
 Enter path to password file: passwords.txt
 
-HTTP Version Check
+## Vulnerability Scanner (HTTP Version Check)
 
-Enter target URL: http://example.com
+-Function: Checks the HTTP version number of a target web server.
 
-Directory Brute Forcing
+-Relevance: An outdated web server version can have known vulnerabilities that malicious actors can exploit. By identifying the software and version, a tester can look up existing exploits and potential misconfigurations.
+
+-Implementation: This module makes an HTTP request to a target URL and inspects the response headers to extract server and version information.
+
+Example:-
+
+Enter target URL: https://examples.com
+
+
+## Directory Brute Forcing
+
+-Function: Finds hidden directories and files on a web server by using a wordlist.
+
+-Relevance: Often, web servers contain files and directories that are not publicly linked but are still accessible. A successful directory brute-force can uncover sensitive data, misconfigured administrative interfaces, or valuable information for further attacks.
+
+-Implementation: This tool iterates through a list of common directory names, attempting to access them on the target web server and reporting any successful hits.
+
+Example:-
 
 Enter target URL: http://example.com
 Enter path to wordlist: wordlist.txt
 
-HTTP Header Scanning
+## HTTP Header Scanning
+
+-Function: Analyzes the HTTP response headers sent by a web server.
+
+-Relevance: Response headers can reveal important security-related information. For example, the Content-Security-Policy header helps protect against Cross-Site Scripting (XSS), and the Strict-Transport-Security header enforces HTTPS. Misconfigured or missing security headers can indicate vulnerabilities.
+
+-Implementation: This module sends an HTTP request to the target URL and then displays the server's response headers for review.
+
+Example:-
 
 Enter target URL: http://example.com
+
+## Output
