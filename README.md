@@ -27,17 +27,7 @@ The **Penetration Testing Toolkit** is a Python-based framework designed for per
 
 ---
 
-## Table of Contents
 
-1. [Project Setup](#project-setup)
-2. [Installation](#installation)
-3. [Usage](#usage)
-   - [Main Program (`main.py`)](#main-program-mainpy)
-4. [License](#license)
-5. [Disclaimer](#disclaimer)
-6. [Contact](#contact)
-
----
 
 ## Project Setup
 
@@ -56,3 +46,49 @@ To install the required libraries, run the following:
 
 ```bash
 pip install requests paramiko
+```
+
+## Usage
+
+The main entry point for the toolkit is the main.py file. This script provides an interactive menu to choose and run each of the penetration testing tools.
+
+Main Program (main.py)
+
+To start the toolkit, run the main.py script:
+
+python3 main.py
+
+Penetration Testing Toolkit
+===========================
+1. Port Scanner
+2. Brute Forcer (SSH)
+3. Vulnerability Scanner (HTTP Version Check)
+4. Directory Brute Force (Web Server)
+5. HTTP Header Scanner
+0. Exit
+
+Example Commands
+
+ Port Scanning
+
+Enter target IP or domain: 8.8.8.8
+Enter ports (comma-separated): 22,80,443
+
+SSH Brute Forcing
+
+Enter target IP: 192.168.1.10
+Enter username: admin
+Enter path to password file: passwords.txt
+
+HTTP Version Check
+
+Enter target URL: http://example.com
+
+Directory Brute Forcing
+
+Enter target URL: http://example.com
+Enter path to wordlist: wordlist.txt
+
+HTTP Header Scanning
+
+Enter target URL: http://example.com
