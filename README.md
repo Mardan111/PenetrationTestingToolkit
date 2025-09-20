@@ -141,3 +141,15 @@ Example:-
 Enter target URL: http://example.com
 
 ## Output
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f7288c54-a057-449f-b781-8978258a01ef" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/fb36a0f7-66a6-4c81-929c-4d897b512d8d" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/7bbf4336-a411-49b5-b646-67089a6e7df6" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/ed950d63-c7e2-4ad1-a127-a9332922dc67" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/89acc950-a5e6-498c-b9dd-f70346bbb587" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d876ab5d-f990-45ff-98d0-7b4125059bfa" />
